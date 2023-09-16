@@ -114,7 +114,7 @@ function Dashboard() {
       {/* Coffee menu section End */}
 
       {/* Food menu section start */}
-      <div className="menu" id="menu" >
+      {/* <div className="menu" id="menu" >
         <h2>
           Food<span> Menu</span>
         </h2>
@@ -129,7 +129,7 @@ function Dashboard() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       {/* Food menu section End */}
       {/* <Footer /> */}
     </>
