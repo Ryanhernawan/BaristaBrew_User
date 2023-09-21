@@ -1,268 +1,294 @@
-body{
-  font-family: 'Poppins',sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   background-color: black;
   color: #000000;
-  max-width: fit-content;
-  
 }
 
-
+button {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 100px;
+  background-color: #a48d60;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 /* Navbar.css */
-.navbar-container{
+.navbar-container {
   background-color: #010101;
- width: 100%;
-  border-bottom:2px solid #ffffff;  
-
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    /* padding: 10px; */
-    
-  }
+  display: flex;
+  align-items: center;
+  /* padding: 10px; */
+}
 
-  
-  .logo {
-    max-width: 200px; /* Atur lebar maksimum gambar */
-    height: auto; /* Gambar akan menyesuaikan tingginya */
-    margin-right: 10px;
-  }
-  
-  .navbar-text {
-    font-size: 50px;
-    color: #fff;
-    /* Ukuran teks */
-  }
+.logo {
+  max-width: 200px; /* Atur lebar maksimum gambar */
+  height: auto; /* Gambar akan menyesuaikan tingginya */
+  margin-right: 10px;
+}
 
-  .navbar-text span{
-    font-size: 50px;
-    color: #A48D60;
-    /* Ukuran teks */
-  }
+.navbar-text {
+  font-size: 50px;
+  color: #fff;
+  /* Ukuran teks */
+}
 
+.navbar-text span {
+  font-size: 50px;
+  color: #a48d60;
+  /* Ukuran teks */
+}
 
-  /* SECTION AWAL */
-  .background-image-container{
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .background-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+/* SECTION AWAL */
+.background-image-container {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+}
+
+.text-overlay h1 {
+  font-size: 50px;
+}
+
+.text-overlay span {
+  color: #a48d60;
+}
+
+.text-overlay p {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.text-overlay button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #a48d60;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* MENU SECTION */
+.menu {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.menu span {
+  color: #a48d60;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  /* border: 1px solid #ddd; */
+  padding: 50px;
+}
+
+.menu .row .menu-card img {
+  border-radius: 100%;
+  height: 130px;
+  width: 50%;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin-top: 1rem auto 0.5rem;
+  width: 300px;
+  font-size: 20px;
+}
+
+.additional-container {
+  text-align: center;
+  margin-top: 12px;
+}
+.additional-container h1 {
+  font-size: 20px;
+}
+.additional {
+  text-align: left;
+}
+.additional h1 {
+  font-size: 15px;
+}
+.additional p {
+  color: #a48d60;
+}
+
+/* MODAL */
+/* CSS untuk mengatur modal di tengah */
+.modal-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: fit-content;
+  max-width: 300px;
+  padding: 20px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
   
-  
+}
+
+.form-group img{
+  margin-top: 20px;
+  height: 250px;
+  width: 90%;
+}
+/* CSS untuk mengurangi opasitas latar belakang */
+.modal-backdrop.show {
+  opacity: 100; /* Ubah nilai opasitas sesuai kebutuhan Anda */
+  backdrop-filter: blur(5px); /* Ubah nilai blur sesuai kebutuhan Anda */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* RESPONSIVE SECTIOn */
+
+@media (max-width: 1366px) {
   .text-overlay {
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 40%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    text-align:left;
+    text-align: left;
     color: white;
   }
-  
   .text-overlay h1 {
     font-size: 50px;
   }
-
-  .text-overlay span{
-    color: #A48D60;
-  }
-
-
-  .text-overlay p{
+  .text-overlay p {
     font-style: italic;
-    font-size: 30px;
-
+    font-size: 20px;
   }
-  
-  .text-overlay button {
-    margin-top: 20px;
-    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: fit-content;
+  }
+  .navbar-container {
+    max-width: 100%;
+  }
+  /* Atur tampilan responsif ketika lebar layar kurang dari atau sama dengan 768px */
+  .logo {
+    max-width: 200px; /* Mengurangi ukuran gambar pada layar kecil */
+  }
+
+  .navbar-text {
+    font-size: 25px; /* Mengurangi ukuran teks pada layar kecil */
+  }
+  .navbar-text span {
+    font-size: 25px; /* Mengurangi ukuran teks pada layar kecil */
+  }
+  .text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+  }
+  .text-overlay h1 {
+    font-size: 20px;
+  }
+  .text-overlay p {
+    font-style: italic;
+    font-size: 12px;
+  }
+  .menu-container {
+    width: calc(50% - 20px); /* 2 kolom pada tampilan lebih kecil */
+  }
+  .menu .row .menu-card img {
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+  }
+  .menu .row .menu-card {
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    width: 300px;
+    height: 100%;
+  }
+  .menu .row .menu-card .menu-card-title {
+    margin-top: 1rem auto 0.5rem;
+    font-size: 20px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-container {
+    width: calc(50% - 20px); /* 2 kolom pada tampilan lebih kecil */
+  }
+  .menu .row .menu-card img {
+    border-radius: 100%;
+    width: 100%;
+    height: 100px;
+  }
+  .menu .row {
+    align-items: center;
+  }
+  .menu .row .menu-card button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
     border-radius: 100px;
-    background-color: #A48D60;
+    background-color: #a48d60;
     color: white;
     border: none;
     cursor: pointer;
   }
-  
-  /* MENU SECTION */
-  .menu{
-    text-align: center;   
-    background-color: #000;
-    color: #fff;
-  }
 
- .menu span{
-  color: #A48D60;
- }
-
-  .menu .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    justify-content: center;
+  .menu .row .menu-card-price {
+    font-size: 14px;
   }
-  
   .menu .row .menu-card {
     text-align: center;
     /* border: 1px solid #ddd; */
-    padding: 50px;
+    padding: 10px;
+    width: 100px;
+    height: 100%;
   }
-
-  .menu .row .menu-card img{
-    border-radius: 100%;
-    height:130px;
-    width: 80%;
-  }
-
-  .menu .row .menu-card .menu-card-title{
-    margin-top: 1rem auto 0.5rem;
-    width: 200px;
-    font-size: 20px;
-  }
-
-  .additional-container{
-    text-align: center;
-    margin-top: 12px;
-  }
-  .additional-container h1{
-    font-size: 20px;
-  }
-  .additional{
-    text-align: left;
-  }
-  .additional h1{
-    font-size: 15px;
-  }
-  .additional p{
-    color: #A48D60;
-  }
-
-
-  /* RESPONSIVE SECTIOn */
-
-  @media(max-width: 1366px){
-    .text-overlay{
-      position: absolute;
-      top: 40%;
-      left: 35%;
-      transform: translate(-50%, -50%);
-      text-align:left;
-      color: white;
-    }
-    .text-overlay h1 {
-      font-size: 50px;
-    }
-    .text-overlay p{
-      font-style: italic;
-      font-size: 20px;
-  
-    }
-}
-
-
-  @media (max-width: 768px) {
-    body{
-      max-width: fit-content;
-    }
-    .navbar-container{
-      max-width: 100%;
-    }
-    /* Atur tampilan responsif ketika lebar layar kurang dari atau sama dengan 768px */
-    .logo {
-      max-width: 200px; /* Mengurangi ukuran gambar pada layar kecil */
-    }
-  
-    .navbar-text {
-      font-size: 25px; /* Mengurangi ukuran teks pada layar kecil */
-    }
-    .navbar-text span {
-        font-size: 25px; /* Mengurangi ukuran teks pada layar kecil */
-      }
-    .text-overlay{
-      position: absolute;
-      top: 40%;
-      left: 35%;
-      transform: translate(-50%, -50%);
-      text-align:left;
-      color: white;
-    }
-    .text-overlay h1 {
-      font-size: 20px;
-    }
-    .text-overlay p{
-      font-style: italic;
-      font-size: 12px;
-  
-    }
-    .menu-container {
-      width: calc(50% - 20px); /* 2 kolom pada tampilan lebih kecil */
-    }
-    .menu .row .menu-card img{
-      border-radius: 50%;
-      width: 40%;
-      height: 40%;
-    }
-    .menu .row .menu-card {
-      text-align: center;
-      align-items: center;
-      /* border: 1px solid #ddd; */
-      padding: 10px;
-      width: 300px;
-      height: 100%;
-    }
-    .menu .row .menu-card .menu-card-title{
-      margin-top: 1rem auto 0.5rem;
-      font-size: 20px;
-      width: 300px;
-      
-    }
-  }
-
-
-
-  @media(max-width: 450px){
-    .menu-container {
-      width: calc(50% - 20px); /* 2 kolom pada tampilan lebih kecil */
-    }
-    .menu .row .menu-card img{
-      border-radius: 100%;
-      width: 100%;
-      height: 100px;
-
-    }
-    .menu .row {
-      align-items: center;
-    }
-
- 
-    .menu .row .menu-card-price{
-      font-size: 14px;
-    }
-    .menu .row .menu-card {
-      text-align: center;
-      /* border: 1px solid #ddd; */
-      padding: 10px;
-      width: 100px;
-      height: 100%;
-    }
-  .menu .row .menu-card .menu-card-title{
+  .menu .row .menu-card .menu-card-title {
     margin-top: 1rem auto 0.5rem;
     width: 100px;
     font-size: 12px;
     height: 40px;
   }
-
-
-  }
-
-
-
-  
+}
